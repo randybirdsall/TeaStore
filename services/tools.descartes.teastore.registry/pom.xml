@@ -108,7 +108,7 @@
 		<dependency>
 			<groupId>com.rabbitmq</groupId>
 			<artifactId>amqp-client</artifactId>
-			<version>5.4.0</version>
+			<version>5.14.3</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -223,7 +223,7 @@
 										var insert = new
 										java.lang.String(Files.readAllBytes(Paths.get($basedir+'/../../utilities/tools.descartes.teastore.kieker/src/main/webapp/WEB-INF/web_kieker.txt')));
 
-										content = content.replaceAll("./web-app>", '') + insert;
+										content = content.replaceAll("./web-app&gt;", '') + insert;
 										Files.write(Paths.get($basedir +
 										'/src/main/webapp/WEB-INF/web.xml'), content.getBytes());
 									</script>
