@@ -1,4 +1,4 @@
-FROM rabbitmq:management
+FROM rabbitmq:3.13.3-management
 MAINTAINER Chair of Software Engineering <se2-it@informatik.uni-wuerzburg.de>
 
 COPY apache-tomcat-8.5.24.zip /apache.zip
