@@ -65,7 +65,7 @@
 		<dependency>
 			<groupId>org.glassfish.jersey.media</groupId>
 			<artifactId>jersey-media-json-jackson</artifactId>
-			<version>2.25.1</version>
+			<version>2.26</version>
 		</dependency>
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
@@ -223,7 +223,7 @@
 										var insert = new
 										java.lang.String(Files.readAllBytes(Paths.get($basedir+'/../../utilities/tools.descartes.teastore.kieker/src/main/webapp/WEB-INF/web_kieker.txt')));
 
-										content = content.replaceAll("./web-app>", '') + insert;
+										content = content.replaceAll("./web-app&gt;", '') + insert;
 										Files.write(Paths.get($basedir +
 										'/src/main/webapp/WEB-INF/web.xml'), content.getBytes());
 									</script>
